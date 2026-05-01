@@ -1,1 +1,15 @@
 this is my first project
+git init
+git status
+git add .
+git remote add origin 'url fo repository'
+git config --global user.name "tejasree193"
+git config --global user.mail "maidalatejasree@gmail.com"
+git commit -m "saved"
+git push -u origin master
+git pull
+git clone "url"
+git branch
+git checkout -b "MITS"
+git commit -m "new branch created"
+git push --set-upstream origin MITS
