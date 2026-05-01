@@ -16,3 +16,38 @@ git push --set-upstream origin MITS
 git merge MITS
 git log
 git log --oneline
+
+
+name: Python Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Run test
+        run: python main.py
+
+git init
+git remote -v
+git config --global user.name
+git config --global user.mail
+git remote add origin
+mkdir .github
+cd .github
+mkdir workflows
+cd workflows
+gii.yml
+cd ..
+git commit -m "hi"
+git branch -m main
